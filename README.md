@@ -13,7 +13,7 @@ Encode a .mat file containing the image data into a .jpg image with the specifie
 JPEGencStream = JPEGencodeStream('img1_down.mat', [4 4 4], 1);\
 fileID = fopen('image.jpg', 'w');\
 fwrite(fileID, JPEGencStream, 'uint8');\
-fclose(fileID);\
+fclose(fileID);
 
 2) Decode image.
 Decode a .jpg image into a matlab array containing the image data.
@@ -22,4 +22,4 @@ fileID = fopen('image.jpg');\
 JPEGencStreamDec = fread(fileID, 'uint8');\
 fclose(fileID);\
 JPEGencStreamDec = JPEGencStreamDec';\
-imgCmp = JPEGdecodeStream(JPEGencStreamDec);\
+imgCmp = JPEGdecodeStream(JPEGencStreamDec);
