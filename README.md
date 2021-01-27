@@ -2,11 +2,11 @@
 A JPEG image encoder/decoder implemented in Matlab for the 'Multimedia Systems' university course.
 The compression mode is the Baseline Sequential DCT-based.
 
-#Installation
+# Installation
 1) Clone the repository.
 2) Open folder in Matlab.
 
-#Usage Example
+# Usage Example
 1) Encode image.
 Encode a .mat file containing the image data into a .jpg image with the specified subsampling and quantization scale.
 
